@@ -99,17 +99,41 @@ const Home = () => {
 
         <section id="fifth">
           <h1>About this Site</h1>
-          <p>Any other information or details you'd like to share.</p>
-          <p>Any other information or details you'd like to share.</p>
-          <p>Any other information or details you'd like to share.</p>
-          <p>Any other information or details you'd like to share.</p>
-          <p>Any other information or details you'd like to share.</p>
-          <p>Any other information or details you'd like to share.</p>
+          <p className="aboutSiteContent">
+            I created this website using React, a javaScript library.
+          </p>
+          <p className="aboutSiteContent">
+            The data from the other pages on this website are stored using
+            supabase.&nbsp;
+            <a className="links" href="https://supabase.com/" target="blank">
+              Check out their website here!
+            </a>
+          </p>
+          <p>
+            I used Netflify to publish the website.&nbsp;
+            <a className="links" href="https://www.netlify.com/" target="blank">
+              Check it out here!
+            </a>
+          </p>
+          <p>
+            Find the source code&nbsp;
+            <a
+              className="links"
+              href="https://github.com/amrita-pasupuleti/personalWebsite"
+              target="blank"
+            >
+              here.
+            </a>
+          </p>
+          <p>Don't forget to check back later for more updates!</p>
         </section>
       </div>
 
       <div className="right-sidebar">
-        <p>Check back later for more content:)</p>
+        <p>
+          Feel free to explore and don't forget to check back later for more
+          content:)
+        </p>
       </div>
     </div>
   );
