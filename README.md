@@ -1,4 +1,5 @@
 # Website created using React.js
+This is my personal website. It has a few different pages showing information about me, and other mini projects I did.
 
 
 
