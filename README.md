@@ -1,6 +1,4 @@
-Work in Progress
-
-I used this:
+# Website created using React.js
 
 # Getting Started with Create React App
 
