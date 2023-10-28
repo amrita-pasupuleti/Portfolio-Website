@@ -1,14 +1,17 @@
+.container {
+  display: flex;
+}
+
 .sidebar {
-  position: fixed;
   top: 100;
   left: 10;
   width: 250px;
-  height: 80%;
+  height: 70%;
+  position: fixed;
   padding-top: 10px;
   background-color: #44403c;
   color: #fafaf9;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
-
   border: 2px solid #a8a29e;
   border-radius: 15px;
 }
@@ -24,6 +27,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
+  font-size: 22px;
 }
 
 .sidebar li:hover {
@@ -36,10 +40,14 @@
 }
 
 .content {
-  margin-left: 270px;
+  flex: 4;
+  margin-left: 300px;
+  margin-right: 100px;
+
   padding-right: 1px;
   padding-top: 10px;
   font-family: "Delius", sans-serif;
+  font-size: 20px;
 }
 
 .content h1 {
@@ -50,4 +58,37 @@
 
 .content section {
   margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.skills-list {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.contactsList {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.links {
+  font-family: "Courier New";
+  text-decoration: none;
+}
+
+.links:hover,
+.links:active {
+  color: #3b82f6;
+}
+
+.right-sidebar {
+  flex: 0 0 20%;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  background-color: #44403c;
+  color: #fafaf9;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+  border: 2px solid #a8a29e;
+  border-radius: 15px;
 }
