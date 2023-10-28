@@ -1,10 +1,9 @@
-Work in Progress
+# Website created using React.js
+This is my personal website. It has a few different pages showing information about me, and other mini projects I did.
 
-I used this:
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
