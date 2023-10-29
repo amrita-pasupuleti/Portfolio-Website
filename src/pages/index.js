@@ -11,13 +11,13 @@ const Home = () => {
             <a href="#first">About Me</a>
           </li>
           <li>
-            <a href="#second">Skills</a>
+            <a href="#contacts">Contacts</a>
           </li>
           <li>
-            <a href="#third">Contacts</a>
+            <a href="#links">Links</a>
           </li>
           <li>
-            <a href="#fourth">Links</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
             <a href="#fifth">About this Site</a>
@@ -36,18 +36,7 @@ const Home = () => {
           </p>
         </section>
 
-        <section id="second">
-          <h1>Skills</h1>
-          <ul className="skills-list">
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>JavaScript, React</li>
-            <li>HTML, CSS</li>
-          </ul>
-        </section>
-
-        <section id="third">
+        <section id="contacts">
           <h1>Contacts</h1>
           <ul className="contactsList">
             <li>
@@ -67,7 +56,7 @@ const Home = () => {
           </ul>
         </section>
 
-        <section id="fourth">
+        <section id="links">
           <h1>Links</h1>
           <ul className="contactsList">
             <li>
@@ -94,6 +83,17 @@ const Home = () => {
                 </a>
               </p>
             </li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h1>Skills</h1>
+          <ul className="skills-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>JavaScript, React</li>
+            <li>HTML, CSS</li>
           </ul>
         </section>
 
