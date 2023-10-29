@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c920eb22.css",
+    "main.js": "/static/js/main.e4b38dab.js",
+    "static/media/science.jpeg": "/static/media/science.84251f232f01dd2ce969.jpeg",
+    "static/media/society.png": "/static/media/society.053b2913e453be5df078.png",
+    "static/media/history.png": "/static/media/history.ee37053ff0b811b7c90d.png",
+    "index.html": "/index.html",
+    "main.c920eb22.css.map": "/static/css/main.c920eb22.css.map",
+    "main.e4b38dab.js.map": "/static/js/main.e4b38dab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c920eb22.css",
+    "static/js/main.e4b38dab.js"
+  ]
+}
