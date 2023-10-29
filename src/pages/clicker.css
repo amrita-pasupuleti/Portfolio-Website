@@ -82,3 +82,57 @@
 .save-btn:hover {
   transform: scale(110%);
 }
+
+.scoreForm {
+  font-family: "Delius";
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form {
+  color: black;
+}
+
+.scores {
+  margin-top: 20px;
+}
+
+.scoresh1 {
+  font-family: "Coiny", "sans-serif";
+  font-size: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Delius";
+  font-size: 20px;
+}
+
+thead th {
+  border-bottom: 2px solid #fafaf9;
+}
+
+tbody td {
+  padding: 8px;
+  text-align: center;
+}
+
+.savebtn {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "Delius";
+  padding: 5px 10px 5px 10px;
+  border-radius: 15%;
+}
+
+.savebtn:hover {
+  transform: scale(110%);
+}
+
+.info {
+  font-family: "Delius";
+  font-size: 30px;
+  margin: 20px 0px 0px 20px;
+}

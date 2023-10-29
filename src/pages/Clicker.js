@@ -10,8 +10,8 @@ function Clicker() {
     setSelectedButton(buttonName);
   };
   return (
-    <div class="container">
-      <div class="button-list">
+    <div className="container">
+      <div className="button-list">
         <ul>
           <li>
             <button onClick={() => handleButtonClick("cc")}>
@@ -42,25 +42,6 @@ function Counter() {
   const [count, setCount] = useState(0);
   const [showSave, setShowSave] = useState(false);
 
-  return (
-    <div>
-      <p className="count">Count: {count}</p>
-      <button className="num-btn" onClick={() => setCount((c) => c + 1)}>
-        +1
-      </button>
-      <button className="reset-btn" onClick={() => setCount((c) => 0)}>
-        Reset
-      </button>
-      <button className="save-btn" onClick={() => setShowSave((show) => !show)}>
-        Save
-      </button>
-
-      {showSave ? <SaveCount setShowSave={setShowSave} /> : null}
-    </div>
-  );
-}
-
-function SaveCount() {
   const [scores, setScores] = useState([]);
 
   useEffect(function () {
@@ -75,24 +56,92 @@ function SaveCount() {
   }, []);
 
   return (
-    <>
-      <h1>Saved Scores</h1>
-      <ul>
-        {scores.map((score) => (
-          <li key={score.id}>
-            <strong>Name:</strong> {score.name}, <strong>Score:</strong>{" "}
-            {score.score}
-          </li>
-        ))}
-      </ul>
-    </>
+    <div>
+      <p className="count">Count: {count}</p>
+      <button className="num-btn" onClick={() => setCount((c) => c + 1)}>
+        +1
+      </button>
+      <button className="reset-btn" onClick={() => setCount((c) => 0)}>
+        Reset
+      </button>
+      <button className="save-btn" onClick={() => setShowSave((show) => !show)}>
+        {showSave ? "Close" : "Save"}
+      </button>
+
+      {showSave ? <SaveCount setShowSave={setShowSave} count={count} /> : null}
+
+      <div className="scores">
+        <h1 className="scoresh1">Saved Scores</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {scores.map((score) => (
+              <tr key={score.id}>
+                <td>{score.name}</td>
+                <td>{score.score}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function SaveCount({ count, setShowSave }) {
+  const [name, setName] = useState("");
+  const [setError] = useState("");
+
+  const saveScore = async () => {
+    if (name.trim() === "") {
+      setError("Name is required.");
+      return;
+    }
+
+    const { data: existingScores, error: existingScoresError } = await supabase
+      .from("scores")
+      .select()
+      .eq("name", name);
+
+    if (existingScoresError) {
+      console.error("Error checking existing scores:", existingScoresError);
+      return;
+    }
+
+    if (existingScores && existingScores.length > 0) {
+      setError("Name is already taken.");
+      return;
+    }
+  };
+
+  return (
+    <div className="scoreForm">
+      <p>Save Your Score Here:</p>
+      <label>
+        Name:{" "}
+        <input
+          className="form"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+      <button className="savebtn" onClick={saveScore}>
+        Save
+      </button>
+    </div>
   );
 }
 
 function Calculator() {
   return (
     <>
-      <p>grade calculator in progress</p>
+      <p className="info">Grade calculator in progress . . .</p>
     </>
   );
 }
@@ -100,7 +149,7 @@ function Calculator() {
 function Other() {
   return (
     <>
-      <p>In progress</p>
+      <p className="info">In progress . . .</p>
     </>
   );
 }
