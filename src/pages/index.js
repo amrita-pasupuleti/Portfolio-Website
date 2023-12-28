@@ -11,6 +11,9 @@ const Home = () => {
       <div className="sidebar">
         <ul>
           <li>
+            <h2>Hello</h2>
+          </li>
+          <li>
             <a
               href="https://www.linkedin.com/in/amrita-pasupuleti/"
               target="_blank"
