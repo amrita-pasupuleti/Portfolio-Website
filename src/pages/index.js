@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home-style.css";
 /*Logos*/
 import gmail from "./gmailicon.png";
@@ -15,6 +14,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/amrita-pasupuleti/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={linkedin}
@@ -26,7 +26,11 @@ const Home = () => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/amrita-pasupuleti" target="_blank">
+            <a
+              href="https://github.com/amrita-pasupuleti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={github}
                 height={100}
