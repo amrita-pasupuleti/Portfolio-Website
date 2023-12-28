@@ -3,18 +3,40 @@
 }
 
 .sidebar {
-  flex: 15% 0 0;
+  flex: 23% 0 0;
   text-align: center;
   font-size: 30px;
   color: #fafaf9;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
   border-right: 5px groove #a8a29e;
-  padding-top: 30px;
+}
+
+.name1 {
+  border-bottom: 1px solid #a8a29e;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.name1 h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.name {
+  border-bottom: 1px solid #a8a29e;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .sidebar li {
-  padding-top: 10px;
-  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 22px;
@@ -27,6 +49,7 @@
 .contactBtn {
   border: #a8a29e solid 2px;
   border-radius: 100px;
+  margin-top: 10px;
 }
 
 .sidebar img:hover {
@@ -48,6 +71,10 @@
   text-align: left;
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-size: 25px;
+
+  border-bottom: 1px solid #a8a29e;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .content section {

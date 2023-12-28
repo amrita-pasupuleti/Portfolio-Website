@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home-style.css";
 /*Logos*/
-import gmail from "./gmailicon.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 
@@ -10,8 +9,14 @@ const Home = () => {
     <div className="container">
       <div className="sidebar">
         <ul>
-          <li>
-            <h2>Hello</h2>
+          <li className="name">
+            <div className="name1">
+              <h2>Amrita Pasupuleti</h2>
+              <h3>amritapasupuleti@gmail.com</h3>
+            </div>
+
+            <h3>Computer Science, B.S.</h3>
+            <h3>University of California, Santa Cruz</h3>
           </li>
           <li>
             <a
@@ -40,17 +45,6 @@ const Home = () => {
                 width={100}
                 className="contactBtn"
                 alt="git"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="mailto: amritapasupuleti@gmail.com">
-              <img
-                src={gmail}
-                height={100}
-                width={100}
-                className="contactBtn"
-                alt="email"
               />
             </a>
           </li>
