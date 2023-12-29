@@ -52,7 +52,7 @@ const Home = () => {
       </div>
 
       <div className="content">
-        <section id="first">
+        <section>
           <h1>About Me</h1>
           <p className="AboutContent">
             Hi, my name is Amrita Pasupuleti! I'm a second-year computer science
@@ -64,18 +64,22 @@ const Home = () => {
           <p>Contact me at amritapasupuleti@gmail.com.</p>
         </section>
 
-        <section id="skills">
-          <h1>Skills</h1>
-          <ul className="skills-list">
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>JavaScript, React</li>
-            <li>HTML, CSS</li>
+        <section>
+          <h1>Relevant Coursework</h1>
+          <ul className="class-list">
+            <li>
+              CSE 30: Programming Abstractions: Python and Data Structures
+            </li>
+            <li>CSE 13s: Computer Systems and C Programming</li>
+            <li>CSE 12: Computer Systems and Assembly Language</li>
+            <li>CSE 120: Computer Architecture</li>
+            <li>CSE 16: Applied Discrete Mathematics </li>
+            <li>Math 19B: Mathematical Methods for Engineers</li>
+            <li>CS 146 (ohlone college): Unix/Linux</li>
           </ul>
         </section>
 
-        <section id="fifth">
+        <section>
           <h1>About this Site</h1>
           <p className="aboutSiteContent">
             I created this website using React, a javaScript library.
@@ -108,10 +112,13 @@ const Home = () => {
       </div>
 
       <div className="right-sidebar">
-        <p>
-          Feel free to explore and don't forget to check back later for more
-          content:)
-        </p>
+        <ul className="skills-list">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+          <li>JavaScript, React</li>
+          <li>HTML, CSS</li>
+        </ul>
       </div>
     </div>
   );
