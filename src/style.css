@@ -13,6 +13,10 @@
   background-image: linear-gradient(135deg, #292524, #212333, #23233f);
 }
 
+.navbar img {
+  margin: 10px 0 10px 0;
+}
+
 .navtitle {
   margin-top: 10px;
   margin-bottom: 10px;

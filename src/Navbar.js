@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./mainpfp.png";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="navtitle">My Website</h1>
+      <img src={logo} height={50} width={50} alt="logo" />
       <ul className="navlinks">
         <li>
           <Link to="/">Home</Link>
