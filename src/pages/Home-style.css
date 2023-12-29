@@ -91,10 +91,6 @@
   margin-left: 20px;
 }
 
-.skills-list {
-  list-style-type: circle;
-}
-
 .right-sidebar {
   flex: 0 0 20%;
   text-align: center;

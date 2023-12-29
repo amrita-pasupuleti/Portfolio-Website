@@ -65,6 +65,17 @@ const Home = () => {
         </section>
 
         <section>
+          <h1>Skills</h1>
+          <ul className="class-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>JavaScript, React</li>
+            <li>HTML, CSS</li>
+          </ul>
+        </section>
+
+        <section>
           <h1>Relevant Coursework</h1>
           <ul className="class-list">
             <li>
@@ -111,15 +122,7 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="right-sidebar">
-        <ul className="skills-list">
-          <li>Python</li>
-          <li>Java</li>
-          <li>C</li>
-          <li>JavaScript, React</li>
-          <li>HTML, CSS</li>
-        </ul>
-      </div>
+      <div className="right-sidebar"></div>
     </div>
   );
 };
