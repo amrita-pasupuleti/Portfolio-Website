@@ -3,7 +3,7 @@ import React from "react";
 function Hackathon() {
   return (
     <div>
-      <p>in progress</p>
+      <p>will be updated by Dec 30</p>
     </div>
   );
 }
