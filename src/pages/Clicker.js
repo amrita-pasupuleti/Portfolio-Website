@@ -245,7 +245,9 @@ function Calculator() {
               </select>
             </div>
           ))}
-          <button onClick={addCourse}>Add Course</button>
+          <button className="addCourse" onClick={addCourse}>
+            Add Course
+          </button>
         </div>
 
         <div className="gpa-container">
