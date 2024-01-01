@@ -1,8 +1,8 @@
 import React from "react";
-import "./Home-style.css";
+import "./index.css";
 /*Logos*/
-import linkedin from "./linkedin.png";
-import github from "./github.png";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
 
 const Home = () => {
   return (

@@ -171,25 +171,25 @@ ul {
 
 .tech-button {
   width: 100%;
-  background-image: url("tech.png");
+  background-image: url("../images/tech.png");
   background-position: center;
   background-size: cover;
 }
 .science-button {
   width: 100%;
-  background-image: url("science.jpeg");
+  background-image: url("../images/science.jpeg");
   background-position: center;
   background-size: cover;
 }
 .society-button {
   width: 100%;
-  background-image: url("society.png");
+  background-image: url("../images/society.png");
   background-position: center;
   background-size: cover;
 }
 .history-button {
   width: 100%;
-  background-image: url("history.png");
+  background-image: url("../images/history.png");
   background-position: center;
   background-size: cover;
 }

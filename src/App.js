@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./style.css";
+import "./navbar-style.css";
 
 import Home from "./pages";
 import Hackathon from "./pages/Hackathon";
