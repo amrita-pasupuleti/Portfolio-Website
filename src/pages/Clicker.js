@@ -3,7 +3,7 @@ import supabase from "./supabase";
 import "./clicker.css";
 
 function Clicker() {
-  const [selectedButton, setSelectedButton] = useState("cc");
+  const [selectedButton, setSelectedButton] = useState("gc");
 
   // Function to handle button clicks and update the selectedButton state
   const handleButtonClick = (buttonName) => {
@@ -14,15 +14,16 @@ function Clicker() {
       <div className="button-list">
         <ul>
           <li>
+            <button onClick={() => handleButtonClick("gc")}>
+              GPA Calculator
+            </button>
+          </li>
+          <li>
             <button onClick={() => handleButtonClick("cc")}>
               Count Clicker
             </button>
           </li>
-          <li>
-            <button onClick={() => handleButtonClick("gc")}>
-              Grade Calculator
-            </button>
-          </li>
+
           <li>
             <button onClick={() => handleButtonClick("button3")}>Other</button>
           </li>
@@ -139,9 +140,119 @@ function SaveCount({ count, setShowSave }) {
 }
 
 function Calculator() {
+  const [courses, setCourses] = useState([
+    { name: "Course 1", grade: "C" },
+    { name: "Course 2", grade: "C" },
+    { name: "Course 3", grade: "C" },
+  ]);
+
+  const [grades, setGrades] = useState({
+    "A+": 4.0,
+    A: 4.0,
+    "A-": 3.7,
+    "B+": 3.3,
+    B: 3.0,
+    "B-": 2.7,
+    "C+": 2.3,
+    C: 2.0,
+    "C-": 1.7,
+    D: 1.0,
+    F: 0.0,
+  });
+
+  const addCourse = () => {
+    setCourses([...courses, { name: "", grade: "" }]);
+  };
+
+  const handleCourseChange = (index, key, value) => {
+    const updatedCourses = [...courses];
+    updatedCourses[index][key] = value;
+    setCourses(updatedCourses);
+  };
+
+  const handleGradeChange = (grade, value) => {
+    setGrades((prevGrades) => ({
+      ...prevGrades,
+      [grade]: parseFloat(value),
+    }));
+  };
+
+  const calculateGPA = () => {
+    const totalCredits = courses.length;
+    let totalGradePoints = 0;
+
+    courses.forEach((course) => {
+      const numericGrade = parseFloat(grades[course.grade.toUpperCase()]);
+      totalGradePoints += numericGrade;
+    });
+
+    const gpa = totalGradePoints / totalCredits;
+    return gpa.toFixed(2); // Round to two decimal places
+  };
+
   return (
     <>
-      <p className="info">Grade calculator in progress . . .</p>
+      <section className="title">
+        <p>GPA Calculator</p>
+      </section>
+
+      <div className="calculator-container">
+        <div className="grades-container">
+          <h2>Grade Values</h2>
+          {Object.entries(grades).map(([grade, value]) => (
+            <div key={grade}>
+              {grade}:
+              <input
+                style={{ color: "black" }}
+                type="number"
+                step="0.1"
+                value={value}
+                onChange={(e) => handleGradeChange(grade, e.target.value)}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="courses-container">
+          <h2>Courses</h2>
+
+          {courses.map((course, index) => (
+            <div key={index}>
+              <input
+                style={{ color: "black" }}
+                type="text"
+                placeholder={`Course ${index + 1} name`}
+                value={course.name}
+                onChange={(e) =>
+                  handleCourseChange(index, "name", e.target.value)
+                }
+              />
+              <select
+                style={{ color: "black" }}
+                value={course.grade}
+                onChange={(e) =>
+                  handleCourseChange(index, "grade", e.target.value)
+                }
+              >
+                <option value="">Select Grade</option>
+                <option className="gradeoption" value="A">
+                  A
+                </option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+              </select>
+            </div>
+          ))}
+          <button onClick={addCourse}>Add Course</button>
+        </div>
+
+        <div className="gpa-container">
+          <h2>GPA</h2>
+          <p>{`Your GPA is: ${calculateGPA()}`}</p>
+        </div>
+      </div>
     </>
   );
 }
