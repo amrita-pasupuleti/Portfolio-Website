@@ -92,7 +92,7 @@ const Home = () => {
         <section>
           <h1>About this Site</h1>
           <p className="aboutSiteContent">
-            I created this website using React, a javaScript library.
+            I created this website using React.js.
           </p>
           <p className="aboutSiteContent">
             The data from the other pages on this website are stored using
@@ -103,8 +103,8 @@ const Home = () => {
           </p>
           <p>
             I used&nbsp;
-            <a className="links" href="https://www.netlify.com/" target="blank">
-              Netflify
+            <a className="links" href="https://vercel.com/" target="blank">
+              Vercel
             </a>
             &nbsp;to publish the website.
           </p>
