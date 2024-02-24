@@ -39,6 +39,7 @@ function Hackathon() {
         </div>
       </div>
 
+      {/* Added a new div for scrolling */}
       <div className="projects-container">
         <ul className="projects-list">
           <li ref={firstProjectRef}>
@@ -88,8 +89,8 @@ function Hackathon() {
             </h2>
 
             <div className="majorImages">
-              <img src={major1} height="300" />
-              <img src={major2} height="300" />
+              <img src={major1} height="300" alt="major1" />
+              <img src={major2} height="300" alt="major2" />
             </div>
           </li>
         </ul>

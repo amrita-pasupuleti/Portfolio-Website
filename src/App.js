@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./navbar-style.css";
+import "./Navbar.css";
 
-import Home from "./pages";
+import Home from "./pages/Home";
 import Hackathon from "./pages/Hackathon";
 import Fff from "./pages/Fff";
 import Clicker from "./pages/Clicker";
@@ -15,9 +15,9 @@ class App extends Component {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} exact />
-          <Route path="/pages/Hackathon" element={<Hackathon />} />
-          <Route path="/pages/Fff" element={<Fff />} />
-          <Route path="/pages/Clicker" element={<Clicker />} />
+          <Route path="/hackathon" element={<Hackathon />} />
+          <Route path="/fff" element={<Fff />} />
+          <Route path="/other" element={<Clicker />} />
         </Routes>
       </div>
     );

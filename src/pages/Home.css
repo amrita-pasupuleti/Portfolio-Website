@@ -3,8 +3,9 @@
 }
 
 .sidebar {
-  flex: 23% 0 0;
+  flex: 25% 0;
   text-align: center;
+  padding-right: 1vh;
   font-size: 30px;
   color: #fafaf9;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
@@ -91,6 +92,7 @@
   margin-left: 20px;
 }
 
+/*
 .right-sidebar {
   flex: 0 0 20%;
   text-align: center;
@@ -108,3 +110,4 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+*/

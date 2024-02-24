@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./Home.css";
 /*Logos*/
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
@@ -67,25 +67,24 @@ const Home = () => {
         <section>
           <h1>Skills</h1>
           <ul className="class-list">
-            <li>Python</li>
             <li>Java</li>
             <li>C</li>
-            <li>JavaScript, React</li>
-            <li>HTML, CSS</li>
+            <li>C++</li>
+            <li>Python: Pandas and Machine Learning</li>
+            <li>HTML, JavaScript, React</li>
+            <li>UI/UX Design</li>
           </ul>
         </section>
 
         <section>
           <h1>Relevant Coursework</h1>
           <ul className="class-list">
-            <li>
-              CSE 30: Programming Abstractions: Python and Data Structures
-            </li>
-            <li>CSE 13s: Computer Systems and C Programming</li>
             <li>CSE 12: Computer Systems and Assembly Language</li>
+            <li>CSE 13s: Computer Systems and C Programming</li>
+            <li>CSE 30: Programming Abstractions-Python and Data Structures</li>
+            <li>CSE 40: Machine Learning</li>
+            <li>CSE 101: Data Structures in C and C++ </li>
             <li>CSE 120: Computer Architecture</li>
-            <li>CSE 16: Applied Discrete Mathematics </li>
-            <li>Math 19B: Mathematical Methods for Engineers</li>
             <li>CS 146 (ohlone college): Unix/Linux</li>
           </ul>
         </section>
@@ -97,19 +96,20 @@ const Home = () => {
           </p>
           <p className="aboutSiteContent">
             The data from the other pages on this website are stored using
-            supabase.&nbsp;
+            &nbsp;
             <a className="links" href="https://supabase.com/" target="blank">
-              Check out their website here!
+              supabase.
             </a>
           </p>
           <p>
-            I used Netflify to publish the website.&nbsp;
+            I used&nbsp;
             <a className="links" href="https://www.netlify.com/" target="blank">
-              Check it out here!
+              Netflify
             </a>
+            &nbsp;to publish the website.
           </p>
           <p>
-            Find the source code&nbsp;
+            Find the source code on github&nbsp;
             <a
               className="links"
               href="https://github.com/amrita-pasupuleti/personalWebsite"
@@ -121,8 +121,6 @@ const Home = () => {
           <p>Don't forget to check back later for more updates!</p>
         </section>
       </div>
-
-      <div className="right-sidebar"></div>
     </div>
   );
 };

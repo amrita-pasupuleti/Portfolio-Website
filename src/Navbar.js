@@ -11,13 +11,13 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/pages/Hackathon">Hackathon Projects</Link>
+          <Link to="/hackathon">Hackathon Projects</Link>
         </li>
         <li>
-          <Link to="/pages/Fff">Facts Message Board</Link>
+          <Link to="/fff">Facts Message Board</Link>
         </li>
         <li>
-          <Link to="/pages/Clicker">Other Projects</Link>
+          <Link to="/other">Other Projects</Link>
         </li>
       </ul>
     </nav>

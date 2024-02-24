@@ -4,7 +4,7 @@
 }
 
 .sideBar-container {
-  height: 170vh;
+  height: 84vh;
   width: 45vh;
   padding-right: 2vh;
   padding-left: 2vh;
@@ -13,7 +13,7 @@
 }
 .projects-sidebar {
   text-align: center;
-  padding-top: 3vh;
+  padding-top: 1vh;
   position: fixed;
   width: 35vh;
 
@@ -46,6 +46,8 @@ button:hover {
 
 .projects-container {
   margin-left: 4vh;
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+  max-height: 84vh;
 }
 
 .projects-list {
