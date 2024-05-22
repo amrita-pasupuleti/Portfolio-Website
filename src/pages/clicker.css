@@ -180,3 +180,44 @@ tbody td {
   flex: 3;
   flex-basis: 33.33%;
 }
+
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-image: inear-gradient(135deg, #5673e8, #3131b6);;
+}

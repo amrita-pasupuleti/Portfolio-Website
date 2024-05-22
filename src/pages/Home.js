@@ -67,11 +67,10 @@ const Home = () => {
         <section>
           <h1>Skills</h1>
           <ul className="class-list">
-            <li>Java</li>
             <li>C</li>
             <li>C++</li>
             <li>Python: Pandas and Machine Learning</li>
-            <li>HTML, JavaScript, React</li>
+            <li>JavaScript, React</li>
             <li>UI/UX Design</li>
           </ul>
         </section>
@@ -79,11 +78,11 @@ const Home = () => {
         <section>
           <h1>Relevant Coursework</h1>
           <ul className="class-list">
-            <li>CSE 12: Computer Systems and Assembly Language</li>
-            <li>CSE 13s: Computer Systems and C Programming</li>
-            <li>CSE 30: Programming Abstractions-Python and Data Structures</li>
-            <li>CSE 40: Machine Learning</li>
             <li>CSE 101: Data Structures in C and C++ </li>
+            <li>CSE 30: Programming Abstractions and Data Structures</li>
+            <li>CSE 13s: Computer Systems and C Programming</li>
+            <li>CSE 130: Computer System Design</li>
+            <li>CSE 40: Machine Learning</li>
             <li>CSE 120: Computer Architecture</li>
             <li>CS 146 (ohlone college): Unix/Linux</li>
           </ul>

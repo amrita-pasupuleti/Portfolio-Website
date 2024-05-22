@@ -3,7 +3,7 @@ import supabase from "./supabase";
 import "./clicker.css";
 
 function Clicker() {
-  const [selectedButton, setSelectedButton] = useState("gc");
+  const [selectedButton, setSelectedButton] = useState("ttt");
 
   // Function to handle button clicks and update the selectedButton state
   const handleButtonClick = (buttonName) => {
@@ -13,6 +13,11 @@ function Clicker() {
     <div className="container">
       <div className="button-list">
         <ul>
+        <li>
+            <button onClick={() => handleButtonClick("ttt")}>
+              Tic-Tac-Toe
+            </button>
+          </li>
           <li>
             <button onClick={() => handleButtonClick("gc")}>
               GPA Calculator
@@ -24,6 +29,8 @@ function Clicker() {
             </button>
           </li>
 
+          
+
           <li>
             <button onClick={() => handleButtonClick("button3")}>Other</button>
           </li>
@@ -33,6 +40,7 @@ function Clicker() {
       <div className="main-content">
         {selectedButton === "cc" && <Counter />}
         {selectedButton === "gc" && <Calculator />}
+        {selectedButton === "ttt" && <TicTacToe />}
         {selectedButton === "button3" && <Other />}
       </div>
     </div>
@@ -65,6 +73,7 @@ function Counter() {
       <button className="reset-btn" onClick={() => setCount((c) => 0)}>
         Reset
       </button>
+      {/* supabase stuff 
       <button className="save-btn" onClick={() => setShowSave((show) => !show)}>
         {showSave ? "Close" : "Save"}
       </button>
@@ -90,6 +99,7 @@ function Counter() {
           </tbody>
         </table>
       </div>
+      */}
     </div>
   );
 }
@@ -256,6 +266,89 @@ function Calculator() {
         </div>
       </div>
     </>
+  );
+}
+
+
+
+function TicTacToe() {
+  const [board, setBoard] = useState(Array(9).fill(null));
+  const [isXNext, setIsXNext] = useState(true);
+
+  const handleClick = (index) => {
+    if (board[index] || calculateWinner(board)) {
+      return;
+    }
+
+    const newBoard = board.slice();
+    newBoard[index] = isXNext ? 'X' : 'O';
+    setBoard(newBoard);
+    setIsXNext(!isXNext);
+  };
+
+  const calculateWinner = (board) => {
+    const lines = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+
+    for (let line of lines) {
+      const [a, b, c] = line;
+      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+        return board[a];
+      }
+    }
+    return null;
+  };
+
+  const winner = calculateWinner(board);
+  const status = winner
+    ? `Winner: ${winner}`
+    : `Next player: ${isXNext ? 'X' : 'O'}`;
+
+  const renderSquare = (index) => {
+    return (
+      <button className="square" onClick={() => handleClick(index)}>
+        {board[index]}
+      </button>
+    );
+  };
+
+  const restartGame = () => {
+    setBoard(Array(9).fill(null));
+    setIsXNext(true);
+  };
+
+  return (
+    <div className="game">
+      <div className="game-board">
+        <div className="status">{status}</div>
+        <div className="board-row">
+          {renderSquare(0)}
+          {renderSquare(1)}
+          {renderSquare(2)}
+        </div>
+        <div className="board-row">
+          {renderSquare(3)}
+          {renderSquare(4)}
+          {renderSquare(5)}
+        </div>
+        <div className="board-row">
+          {renderSquare(6)}
+          {renderSquare(7)}
+          {renderSquare(8)}
+        </div>
+        <button className="restart-button" onClick={restartGame}>
+          Restart Game
+        </button>
+      </div>
+    </div>
   );
 }
 

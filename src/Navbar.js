@@ -14,9 +14,6 @@ function Navbar() {
           <Link to="/hackathon">Hackathon Projects</Link>
         </li>
         <li>
-          <Link to="/fff">Facts Message Board</Link>
-        </li>
-        <li>
           <Link to="/other">Other Projects</Link>
         </li>
       </ul>
