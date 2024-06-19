@@ -73,7 +73,7 @@ function Counter() {
       <button className="reset-btn" onClick={() => setCount((c) => 0)}>
         Reset
       </button>
-      {/* supabase stuff 
+      
       <button className="save-btn" onClick={() => setShowSave((show) => !show)}>
         {showSave ? "Close" : "Save"}
       </button>
@@ -99,7 +99,7 @@ function Counter() {
           </tbody>
         </table>
       </div>
-      */}
+      
     </div>
   );
 }

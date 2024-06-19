@@ -79,9 +79,9 @@ const Home = () => {
           <h1>Relevant Coursework</h1>
           <ul className="class-list">
             <li>CSE 101: Data Structures in C and C++ </li>
-            <li>CSE 30: Programming Abstractions and Data Structures</li>
+            <li>CSE 130: Computer System Design in C</li>
+            <li>CSE 30: Python: Programming Abstractions and Data Structures</li>
             <li>CSE 13s: Computer Systems and C Programming</li>
-            <li>CSE 130: Computer System Design</li>
             <li>CSE 40: Machine Learning</li>
             <li>CSE 120: Computer Architecture</li>
             <li>CS 146 (ohlone college): Unix/Linux</li>
