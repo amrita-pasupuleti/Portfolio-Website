@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import supabase from "./supabase";
-import "./clicker.css";
+import "./other.css";
+import fff1 from "../images/fff1.png";
+import fff2 from "../images/fff2.png";
 
 function Clicker() {
-  const [selectedButton, setSelectedButton] = useState("ttt");
+  const [selectedButton, setSelectedButton] = useState("fff");
 
   // Function to handle button clicks and update the selectedButton state
   const handleButtonClick = (buttonName) => {
@@ -13,7 +16,12 @@ function Clicker() {
     <div className="container">
       <div className="button-list">
         <ul>
-        <li>
+          <li>
+            <button onClick={() => handleButtonClick("fff")}>
+              Fun Facts Site
+            </button>
+          </li>
+          <li>
             <button onClick={() => handleButtonClick("ttt")}>
               Tic-Tac-Toe
             </button>
@@ -29,8 +37,6 @@ function Clicker() {
             </button>
           </li>
 
-          
-
           <li>
             <button onClick={() => handleButtonClick("button3")}>Other</button>
           </li>
@@ -38,10 +44,30 @@ function Clicker() {
       </div>
 
       <div className="main-content">
+        {selectedButton === "fff" && <Fff />}
         {selectedButton === "cc" && <Counter />}
         {selectedButton === "gc" && <Calculator />}
         {selectedButton === "ttt" && <TicTacToe />}
         {selectedButton === "button3" && <Other />}
+      </div>
+    </div>
+  );
+}
+
+function Fff() {
+  return (
+    <div className="fff-container">
+      <div className="project-title">
+        <h1>Fun Facts Website</h1>
+      </div>
+      <Link to="https://fun-facts-website.vercel.app/" target="blank">
+        <button className="linkBtn">Visit the Website Here!</button>
+      </Link>
+      <h2> -- Designed with React and Node js</h2>
+      <h2> -- Used Supabase and APIs to store posts </h2>
+      <div className="fffimg">
+        <img src={fff1} height="600" alt="fff1" />
+        <img src={fff2} height="400" alt="fff2" />
       </div>
     </div>
   );
@@ -65,7 +91,7 @@ function Counter() {
   }, []);
 
   return (
-    <div>
+    <div className="counter-container">
       <p className="count">Count: {count}</p>
       <button className="num-btn" onClick={() => setCount((c) => c + 1)}>
         +1
@@ -73,7 +99,7 @@ function Counter() {
       <button className="reset-btn" onClick={() => setCount((c) => 0)}>
         Reset
       </button>
-      
+
       <button className="save-btn" onClick={() => setShowSave((show) => !show)}>
         {showSave ? "Close" : "Save"}
       </button>
@@ -99,7 +125,6 @@ function Counter() {
           </tbody>
         </table>
       </div>
-      
     </div>
   );
 }
@@ -269,8 +294,6 @@ function Calculator() {
   );
 }
 
-
-
 function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
@@ -281,7 +304,7 @@ function TicTacToe() {
     }
 
     const newBoard = board.slice();
-    newBoard[index] = isXNext ? 'X' : 'O';
+    newBoard[index] = isXNext ? "X" : "O";
     setBoard(newBoard);
     setIsXNext(!isXNext);
   };
@@ -310,7 +333,7 @@ function TicTacToe() {
   const winner = calculateWinner(board);
   const status = winner
     ? `Winner: ${winner}`
-    : `Next player: ${isXNext ? 'X' : 'O'}`;
+    : `Next player: ${isXNext ? "X" : "O"}`;
 
   const renderSquare = (index) => {
     return (

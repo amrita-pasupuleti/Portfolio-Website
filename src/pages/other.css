@@ -4,7 +4,7 @@
 }
 
 .button-list {
-  width: 23%;
+  min-width: 23%;
   padding: 20px;
 }
 
@@ -50,7 +50,25 @@
   margin-bottom: 20px;
 }
 
-.main-content button {
+.calculator-container button {
+  font-family: "Coiny", "sans-serif";
+  font-size: 30px;
+  border: none;
+
+  cursor: pointer;
+  background-color: #22379f;
+}
+
+.game button {
+  font-family: "Coiny", "sans-serif";
+  font-size: 30px;
+  border: none;
+
+  cursor: pointer;
+  background-color: #22379f;
+}
+
+.counter-container button {
   font-family: "Coiny", "sans-serif";
   font-size: 30px;
   border: none;
@@ -60,6 +78,35 @@
 }
 /* padding notes: top right bottom left */
 
+/* FUN FACTS WEBSITE */
+.project-title {
+  font-family: "Trebuchet MS";
+  padding: 5px;
+  border-bottom: 2px groove #a8a29e;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.linkBtn {
+  background-color: #22379f;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 21px;
+  padding: 1vh;
+  border-radius: 10px;
+  margin: 1vh 0 2vh 1vh;
+  cursor: pointer;
+  border: none;
+}
+
+.fff-container h2 {
+  font-family: "Titillium Web";
+}
+
+.fffimg {
+  margin-top: 2vh;
+}
+
+/* OTHER PROJECTS */
 .num-btn {
   margin: auto;
   border-radius: 100px;
@@ -156,7 +203,9 @@ tbody td {
   font-weight: bolder;
 }
 
-.grades-container, .courses-container, .gpa-container {
+.grades-container,
+.courses-container,
+.gpa-container {
   flex: 1;
   flex-basis: 33.33%;
   margin: 0 10px;
@@ -192,7 +241,6 @@ tbody td {
   background-color: #a6b0e2;
   border: 0.1vh solid rgb(70, 70, 70);
 }
-
 
 .game {
   display: flex;
@@ -231,5 +279,5 @@ tbody td {
   font-size: 16px;
   cursor: pointer;
   border-radius: 15px;
-  background-image: inear-gradient(135deg, #5673e8, #3131b6);;
+  background-image: inear-gradient(135deg, #5673e8, #3131b6);
 }
