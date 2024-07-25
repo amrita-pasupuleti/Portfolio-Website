@@ -55,10 +55,10 @@ const Home = () => {
         <section>
           <h1>About Me</h1>
           <p className="AboutContent">
-            Hi, my name is Amrita Pasupuleti! I'm a second-year computer science
-            major at the University of California, Santa Cruz. I like to read
-            and play video games in my free time. I am always looking forward to
-            acquiring more skills and learning everything I can!
+            Hi, my name is Amrita Pasupuleti! I'm a third-year computer science
+            major at the University of California, Santa Cruz. I am always
+            looking forward to acquiring more skills and learning everything I
+            can!
           </p>
           <p>&nbsp;</p>
           <p>Contact me at amritapasupuleti@gmail.com.</p>
@@ -80,7 +80,9 @@ const Home = () => {
           <ul className="class-list">
             <li>CSE 101: Data Structures in C and C++ </li>
             <li>CSE 130: Computer System Design in C</li>
-            <li>CSE 30: Python: Programming Abstractions and Data Structures</li>
+            <li>
+              CSE 30: Python: Programming Abstractions and Data Structures
+            </li>
             <li>CSE 13s: Computer Systems and C Programming</li>
             <li>CSE 40: Machine Learning</li>
             <li>CSE 120: Computer Architecture</li>

@@ -81,6 +81,7 @@
 .content section {
   margin-bottom: 20px;
   margin-right: 20px;
+  letter-spacing: 0.05rem;
 }
 
 .aboutSiteContent {
@@ -90,6 +91,7 @@
 .class-list {
   list-style-type: circle;
   margin-left: 20px;
+  letter-spacing: 0.05rem;
 }
 
 /*

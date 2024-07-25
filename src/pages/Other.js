@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import supabase from "./supabase";
 import "./other.css";
-import fff1 from "../images/fff1.png";
-import fff2 from "../images/fff2.png";
 
 function Clicker() {
-  const [selectedButton, setSelectedButton] = useState("fff");
+  const [selectedButton, setSelectedButton] = useState("gc");
 
   // Function to handle button clicks and update the selectedButton state
   const handleButtonClick = (buttonName) => {
@@ -17,8 +14,8 @@ function Clicker() {
       <div className="button-list">
         <ul>
           <li>
-            <button onClick={() => handleButtonClick("fff")}>
-              Fun Facts Site
+            <button onClick={() => handleButtonClick("gc")}>
+              GPA Calculator
             </button>
           </li>
           <li>
@@ -27,47 +24,17 @@ function Clicker() {
             </button>
           </li>
           <li>
-            <button onClick={() => handleButtonClick("gc")}>
-              GPA Calculator
-            </button>
-          </li>
-          <li>
             <button onClick={() => handleButtonClick("cc")}>
               Count Clicker
             </button>
-          </li>
-
-          <li>
-            <button onClick={() => handleButtonClick("button3")}>Other</button>
           </li>
         </ul>
       </div>
 
       <div className="main-content">
-        {selectedButton === "fff" && <Fff />}
         {selectedButton === "cc" && <Counter />}
         {selectedButton === "gc" && <Calculator />}
         {selectedButton === "ttt" && <TicTacToe />}
-        {selectedButton === "button3" && <Other />}
-      </div>
-    </div>
-  );
-}
-
-function Fff() {
-  return (
-    <div className="fff-container">
-      <div className="project-title">
-        <h1>Fun Facts Website</h1>
-      </div>
-      <Link to="https://fun-facts-website.vercel.app/" target="blank">
-        <button className="linkBtn">Visit the Website Here!</button>
-      </Link>
-      <h2> -- Designed with React and Node js</h2>
-      <h2> -- Used Supabase and APIs to store posts </h2>
-      <div className="fffimg">
-        <img src={fff1} height="600" alt="fff1" />
-        <img src={fff2} height="400" alt="fff2" />
       </div>
     </div>
   );
@@ -372,14 +339,6 @@ function TicTacToe() {
         </button>
       </div>
     </div>
-  );
-}
-
-function Other() {
-  return (
-    <>
-      <p className="info">In progress . . .</p>
-    </>
   );
 }
 

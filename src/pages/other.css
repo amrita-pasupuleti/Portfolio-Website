@@ -78,34 +78,6 @@
 }
 /* padding notes: top right bottom left */
 
-/* FUN FACTS WEBSITE */
-.project-title {
-  font-family: "Trebuchet MS";
-  padding: 5px;
-  border-bottom: 2px groove #a8a29e;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.linkBtn {
-  background-color: #22379f;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 21px;
-  padding: 1vh;
-  border-radius: 10px;
-  margin: 1vh 0 2vh 1vh;
-  cursor: pointer;
-  border: none;
-}
-
-.fff-container h2 {
-  font-family: "Titillium Web";
-}
-
-.fffimg {
-  margin-top: 2vh;
-}
-
 /* OTHER PROJECTS */
 .num-btn {
   margin: auto;
