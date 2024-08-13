@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Clicker from "./pages/Other";
 import Navbar from "./Navbar";
 
 class App extends Component {
@@ -15,7 +14,6 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/other" element={<Clicker />} />
         </Routes>
       </div>
     );

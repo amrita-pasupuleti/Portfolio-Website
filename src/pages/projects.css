@@ -4,21 +4,18 @@
 }
 
 .sideBar-container {
-  height: 84vh;
-  width: 45vh;
-  padding-right: 2vh;
-  padding-left: 2vh;
-  border-right: 2px ridge white;
-  position: relative;
-}
-.projects-sidebar {
   display: flex;
   flex-direction: column;
-
-  padding-top: 1vh;
-  position: fixed;
-  width: 33vh;
   align-items: center;
+
+  height: 84vh;
+  width: 40vh;
+  padding-right: 2vh;
+  padding-left: 2vh;
+  padding-top: 1vh;
+
+  border-right: 2px ridge white;
+  position: relative;
 
   font-size: 30px;
   color: #fafaf9;
@@ -32,13 +29,13 @@
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
-  padding: 2vh 0 2vh 0;
+  padding: 2vh 1vh 2vh 1vh;
   background-image: linear-gradient(135deg, #5a5c64, #3131b6);
-  width: 100%;
 
   cursor: pointer;
   transition: 0.3s;
   margin-bottom: 2vh;
+  width: 100%;
 }
 
 button:hover {

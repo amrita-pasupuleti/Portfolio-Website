@@ -27,29 +27,24 @@ function Projects() {
   return (
     <div className="container">
       <div className="sideBar-container">
-        <div className="projects-sidebar">
-          <button
-            className="scrollBtn"
-            onClick={() => scrollToProject(firstProjectRef)}
-          >
-            Medical Scanner App
-          </button>
-          <button className="scrollBtn" onClick={() => scrollToProject(fff)}>
-            Fun Facts Website
-          </button>
-          <button
-            className="scrollBtn"
-            onClick={() => scrollToProject(prompts)}
-          >
-            AI Prompts Website
-          </button>
-          <button
-            className="scrollBtn"
-            onClick={() => scrollToProject(secondProjectRef)}
-          >
-            College Course Planner
-          </button>
-        </div>
+        <button
+          className="scrollBtn"
+          onClick={() => scrollToProject(firstProjectRef)}
+        >
+          Medical Scanner App
+        </button>
+        <button className="scrollBtn" onClick={() => scrollToProject(fff)}>
+          Fun Facts Website
+        </button>
+        <button className="scrollBtn" onClick={() => scrollToProject(prompts)}>
+          AI Prompts Website
+        </button>
+        <button
+          className="scrollBtn"
+          onClick={() => scrollToProject(secondProjectRef)}
+        >
+          College Course Planner
+        </button>
       </div>
 
       {/* Content Here */}

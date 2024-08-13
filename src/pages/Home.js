@@ -53,25 +53,11 @@ const Home = () => {
 
       <div className="content">
         <section>
-          <h1>About Me</h1>
-          <p className="AboutContent">
-            Hi, my name is Amrita Pasupuleti! I'm a third-year computer science
-            major at the University of California, Santa Cruz. I am always
-            looking forward to acquiring more skills and learning everything I
-            can!
-          </p>
-          <p>&nbsp;</p>
-          <p>Contact me at amritapasupuleti@gmail.com.</p>
-        </section>
-
-        <section>
           <h1>Skills</h1>
           <ul className="class-list">
-            <li>C</li>
-            <li>C++</li>
-            <li>Python: Pandas and Machine Learning</li>
-            <li>JavaScript, React</li>
-            <li>UI/UX Design</li>
+            <li>Programming Languages: Python, C, Java, SQL, Linux</li>
+            <li>Machine Learning and Data Science: Pandas, pyTorch, SNNs </li>
+            <li>Web Development: HTML, css, React JS, posgresQL APIs</li>
           </ul>
         </section>
 
@@ -95,11 +81,13 @@ const Home = () => {
           <p className="aboutSiteContent">
             I created this website using React.js.
           </p>
-          <p className="aboutSiteContent">
-            The data from the other pages on this website are stored using
-            &nbsp;
-            <a className="links" href="https://supabase.com/" target="blank">
-              supabase.
+          <p>
+            <a
+              className="links"
+              href="https://github.com/amrita-pasupuleti/personalWebsite"
+              target="blank"
+            >
+              This is the GitHub link.
             </a>
           </p>
           <p>
@@ -109,17 +97,6 @@ const Home = () => {
             </a>
             &nbsp;to publish the website.
           </p>
-          <p>
-            Find the source code on github&nbsp;
-            <a
-              className="links"
-              href="https://github.com/amrita-pasupuleti/personalWebsite"
-              target="blank"
-            >
-              here.
-            </a>
-          </p>
-          <p>Don't forget to check back later for more updates!</p>
         </section>
       </div>
     </div>
