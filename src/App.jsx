@@ -8,7 +8,7 @@ import { Projects } from "./components/Projects";
 function App() {
   return (
     <div className={styles.App}>
-      <div>
+      <div className={styles.Navbar}>
         <Navbar />
       </div>
       <About />

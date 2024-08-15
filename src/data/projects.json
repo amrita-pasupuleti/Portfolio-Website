@@ -10,7 +10,7 @@
   {
     "title": "4-Year College Planner",
     "imageSrc": "projects/major1.png",
-    "description": "This uses a drag and drop system and web scraping to make a 4 year for college courses at UCSC.",
+    "description": "This website uses a drag and drop system and web scraping to make a 4 year for college courses at UCSC.",
     "skills": ["React", "BeautifulSoup", "Python", "MongoDB"],
     "demo": "https://yashie.me/UCSC4yearplanner/",
     "source": "https://github.com/PurrGod/college-planner-webapp"
@@ -18,7 +18,7 @@
   {
     "title": "Fun Facts Sharing Website",
     "imageSrc": "projects/fff1.png",
-    "description": "Users upload fun facts, which can b upvoted and downvoted, and are sorted into categories.",
+    "description": "Users upload fun facts, which can be upvoted and downvoted, and are sorted into categories.",
     "skills": ["React", "Supabase"],
     "demo": "https://fun-facts-website.vercel.app/",
     "source": "https://github.com/amrita-pasupuleti/fun_facts_website"
