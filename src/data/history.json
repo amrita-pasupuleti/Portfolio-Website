@@ -1,0 +1,24 @@
+[
+  {
+    "role": "Undergraduate AI Researcher",
+    "organisation": "UCSC Neuromorphic Computing Group",
+    "startDate": "April 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Created a python notebook to train a spiking dataset for a neural network",
+      "Worked with the SNN torch and pyTorch libraries to train speech recognition data",
+      "Utilized different gradient descent optimizers to improve the network’s accuracy"
+    ]
+  },
+  {
+    "role": "Data Science Researcher",
+    "organisation": "ASDRP",
+    "startDate": "June 2021",
+    "endDate": "Sept 2021",
+    "experiences": [
+      "Visualized and analyzed data from the U.S. census with python and PANDAS",
+      "Trained an AI model on school enrollment data from counties in California",
+      "Presented results of the model to show factors contributing to school enrollment"
+    ]
+  }
+]
