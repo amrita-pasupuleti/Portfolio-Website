@@ -7,14 +7,16 @@ import { Projects } from "./components/Projects";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <div className={styles.Navbar}>
+    <div className={styles.App} id="about">
+      <div className={styles.Nav}>
         <Navbar />
       </div>
-      <About />
-      <Education />
-      <Experience />
-      <Projects />
+      <div className={styles.Main}>
+        <About />
+        <Education />
+        <Experience />
+        <Projects />
+      </div>
     </div>
   );
 }

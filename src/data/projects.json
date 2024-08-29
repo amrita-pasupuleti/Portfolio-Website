@@ -1,5 +1,13 @@
 [
   {
+    "title": "Chat App",
+    "imageSrc": "projects/chat.png",
+    "description": "An application that allows users to login and chat with other users. Has multiple functionalities, including adding friends, uploading images, and uploading files.",
+    "skills": ["React", "Firebase Auth", "Firebase Storage"],
+    "demo": "https://chat-app-ap-neon.vercel.app/",
+    "source": "https://github.com/amrita-pasupuleti/chat-app"
+  },
+  {
     "title": "Aletheia",
     "imageSrc": "projects/portfolio.png",
     "description": "This is an app that scans documents with OpenAI APIs and explains them in simple terms based on the patient's history.",
@@ -14,13 +22,5 @@
     "skills": ["React", "BeautifulSoup", "Python", "MongoDB"],
     "demo": "https://yashie.me/UCSC4yearplanner/",
     "source": "https://github.com/PurrGod/college-planner-webapp"
-  },
-  {
-    "title": "Fun Facts Sharing Website",
-    "imageSrc": "projects/fff1.png",
-    "description": "Users upload fun facts, which can be upvoted and downvoted, and are sorted into categories.",
-    "skills": ["React", "Supabase"],
-    "demo": "https://fun-facts-website.vercel.app/",
-    "source": "https://github.com/amrita-pasupuleti/fun_facts_website"
   }
 ]

@@ -1,8 +1,11 @@
 @import "../vars.css";
 
+.ExpContainer {
+  height: 12vh;
+}
+
 .container {
   color: var(--color-text);
-  margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
 }

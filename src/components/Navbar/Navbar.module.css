@@ -4,9 +4,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 5vh;
+  padding: 4vh 0 4vh 0;
   z-index: 2;
   margin: 0 10%;
+  background-color: rgba(5, 8, 37, 0.294);
+  border-radius: 15px;
 }
 
 .menuBtn {
