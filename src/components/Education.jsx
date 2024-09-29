@@ -24,15 +24,16 @@ export const Education = () => {
                 CSE 130 -- Computer Systems Design in C
               </li>
               <li className={styles.aboutItem}>
+                CSE 115a -- Software Engineering and Design
+              </li>
+              <li className={styles.aboutItem}>
                 CSE 13s -- Computer Systems and C Programming
               </li>
               <li className={styles.aboutItem}>
                 CSE 30 -- Programming Abstractions: Python
               </li>
               <li className={styles.aboutItem}> CSE 40 -- Machine Learning </li>
-              <li className={styles.aboutItem}>
-                CSE 120 -- Computer Architecture
-              </li>
+
               <li className={styles.aboutItem}>
                 CS 146 (Ohlone college) -- Unix/Linux
               </li>

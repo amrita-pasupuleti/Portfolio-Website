@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Experience.module.css";
 import skills from "../data/skills.json";
-import history from "../data/history.json";
+import history from "../data/exp.json";
 import { getImageUrl } from "../utils";
 
 export const Experience = () => {
@@ -34,7 +34,7 @@ export const Experience = () => {
 
                     <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                     <ul>
-                      {historyItem.experiences.map((experience, id) => {
+                      {historyItem.experience.map((experience, id) => {
                         return <li key={id}>{experience}</li>;
                       })}
                     </ul>

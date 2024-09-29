@@ -50,7 +50,7 @@
 }
 
 .skillImageContainer img {
-  width: 75px;
+  max-width: 75px;
 }
 
 .skill p {
