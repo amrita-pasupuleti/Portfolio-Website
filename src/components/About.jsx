@@ -9,9 +9,11 @@ export const About = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Amrita Pasupuleti</h1>
         <p className={styles.description}>
-          I'm a third year Computer Science major at the University of
-          California, Santa Cruz. I primarily code in Python and C, and I have
-          experience with AI and web development.
+          I'm a third year Computer Science student at the University of
+          California, Santa Cruz. I am currently working as a machine learning
+          intern and a computer science tutor. I also enjoyed being an AI
+          researcher at UCSC, in addition to helping build full stack
+          applications for various projects.
         </p>
       </div>
       <div>

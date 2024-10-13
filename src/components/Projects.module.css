@@ -1,10 +1,10 @@
 @import "../vars.css";
 
 .containerone {
-  margin-top: 76px;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  padding: 12vh 0 10vh 0;
 }
 
 .titleone {

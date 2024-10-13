@@ -27,7 +27,7 @@ export const Education = () => {
                 CSE 115a -- Software Engineering and Design
               </li>
               <li className={styles.aboutItem}>
-                CSE 13s -- Computer Systems and C Programming
+                CSE 114a -- Foundations of Programming Languages
               </li>
               <li className={styles.aboutItem}>
                 CSE 30 -- Programming Abstractions: Python

@@ -1,12 +1,12 @@
 [
   {
-    "role": "Software Engineer Intern",
+    "role": "Machine Learning Intern",
     "organisation": "Veltris",
     "startDate": "Sept 2024",
     "endDate": "Present",
     "experience": [
-      "Contributing to preliminary data cleaning and exploratory data analysis with Python and Jupyter Notebook, by using statistics concepts with Pandas and NumPy for Gen AI models",
-      "Conducting extensive hypothesis testing with different machine learning models, according to client specifications and under the guidance of a mentor"
+      "Contributing to preliminary data cleaning and exploratory data analysis with Python and Jupyter Notebook, by using statistics concepts with Pandas and NumPy for Gen AI and LLM models",
+      "Conducting extensive analysis with different machine learning models using scikit-learn and NLTK, according to client specifications and under the guidance of a mentor"
     ]
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "role": "Undergraduate AI Researcher",
-    "organisation": "UCSC Neuromorphic Computing Group",
+    "organisation": "UC Santa Cruz",
     "startDate": "April 2024",
     "endDate": "Present",
     "experience": [
