@@ -4,9 +4,8 @@
   color: var(--color-text);
   background-color: var(--color-secondary);
   justify-content: space-evenly;
-  width: 62vh;
   margin-left: 2vh;
-  padding: 7% 0px 7% 1vh;
+  padding: 5% 3vh 5% 2vh;
   border-radius: 15px;
 }
 
@@ -27,7 +26,7 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  gap: 26px;
+  gap: 10px;
 }
 
 .link {
@@ -35,6 +34,7 @@
   align-items: center;
   gap: 25px;
   padding-left: 20px;
+  padding: 6px 0 6px 20px;
 }
 
 .links p {
@@ -50,7 +50,7 @@
   align-items: center;
   gap: 25px;
   width: 100%;
-  padding-left: 20px;
+  padding: 6px 0 6px 20px;
   border-radius: 20px;
   background-image: linear-gradient(
     90deg,
