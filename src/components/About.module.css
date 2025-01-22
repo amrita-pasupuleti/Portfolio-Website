@@ -1,4 +1,4 @@
-@import "../vars.css";
+@import '../vars.css';
 
 .container {
   position: relative;
@@ -17,7 +17,7 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans";
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans';
 }
 
 .title {
@@ -75,20 +75,6 @@
   left: -10vw;
   border-radius: 764px;
   background: rgba(25, 54, 109, 0.376);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 54, 109, 0.445);
   filter: blur(100px);
   z-index: 0;
 }

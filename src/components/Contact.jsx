@@ -1,38 +1,49 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Contact.module.css";
-import { getImageUrl } from "../utils";
+import styles from './Contact.module.css';
+import { getImageUrl } from '../utils';
 
 export const Contact = () => {
   return (
     <footer className={styles.container}>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
+          <img src={getImageUrl('contact/emailIcon.png')} alt='Email icon' />
           <p>amritapasupuleti@gmail.com</p>
         </li>
-        <li className={styles.link}>
+        <li
+          className={styles.clickLink}
+          onClick={() =>
+            window.open(
+              'https://www.linkedin.com/in/amrita-pasupuleti/',
+              '_blank',
+              'noopener,noreferrer'
+            )
+          }
+          role='link'
+          tabIndex={0}
+        >
           <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
+            src={getImageUrl('contact/linkedinIcon.png')}
+            alt='LinkedIn icon'
           />
-          <a
-            href="https://www.linkedin.com/in/amrita-pasupuleti/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
+          <p>LinkedIn</p>
         </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a
-            href="https://github.com/amrita-pasupuleti"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+
+        <li
+          className={styles.clickLink}
+          onClick={() =>
+            window.open(
+              'https://github.com/amrita-pasupuleti',
+              '_blank',
+              'noopener,noreferrer'
+            )
+          }
+          role='link'
+          tabIndex={0}
+        >
+          <img src={getImageUrl('contact/githubIcon.png')} alt='GitHub icon' />
+          <p>GitHub</p>
         </li>
       </ul>
     </footer>

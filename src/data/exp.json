@@ -10,24 +10,24 @@
     ]
   },
   {
-    "role": "Computer Science Tutor",
-    "organisation": "Baskin Engineering",
-    "startDate": "Sept 2024",
-    "endDate": "Present",
-    "experience": [
-      "Teaching students data structures and algorithms in C and C++ for UCSC’s CSE 101 class",
-      "Teaching the foundations of machine learning with Python, Pandas, and scikit-learn for CSE 40"
-    ]
-  },
-  {
     "role": "Undergraduate AI Researcher",
     "organisation": "UC Santa Cruz",
     "startDate": "April 2024",
     "endDate": "Present",
     "experience": [
-      "Created a python notebook to train a spiking dataset for a neural network in a group of students",
-      "Working with the SNN torch and pyTorch libraries to train speech recognition and audio data",
-      "Enhanced network accuracy by 7% by experimenting with different gradient descent optimizers"
+      " Currently researching the effectiveness of ternary and septernary weights for vectors in a convolutional neural network with the resnet-18 dataset",
+      "Previously used the SNN torch and pyTorch libraries to train speech recognition and audio data"
+    ]
+  },
+  {
+    "role": "Computer Science Tutor",
+    "organisation": "Baskin Engineering",
+    "startDate": "Sept 2024",
+    "endDate": "Present",
+    "experience": [
+      "Taught students data structures and algorithms in C and C++ for UCSC’s CSE 101 class",
+      "Teaching the foundations of machine learning with Python, Pandas, and scikit-learn for CSE 40",
+      "Teaching the Python programming language for CSE 20 and CSE 30"
     ]
   }
 ]

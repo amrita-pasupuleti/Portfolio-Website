@@ -1,14 +1,12 @@
-@import "../vars.css";
+@import '../vars.css';
 
 .container {
   color: var(--color-text);
   background-color: var(--color-secondary);
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  width: 65vh;
+  width: 62vh;
   margin-left: 2vh;
-  padding: 10% 0px 10% 0px;
+  padding: 7% 0px 7% 1vh;
   border-radius: 15px;
 }
 
@@ -36,9 +34,10 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  padding-left: 20px;
 }
 
-.link a {
+.links p {
   color: var(--color-text);
   text-decoration: none;
   font-size: 30px;
@@ -46,8 +45,26 @@
   letter-spacing: 1.5px;
 }
 
-.link p {
-  font-size: 30px;
+.clickLink {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  padding-left: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(69, 116, 202, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s;
+}
+
+.clickLink:hover {
+  cursor: pointer;
+  background-size: 100% 100%;
 }
 
 @media screen and (max-width: 830px) {

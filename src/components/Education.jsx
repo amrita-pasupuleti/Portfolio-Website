@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Education.module.css";
+import styles from './Education.module.css';
 
 export const Education = () => {
   return (
-    <div id="education">
+    <div id='education'>
       <div className={styles.educationContainer}></div>
       <section className={styles.container}>
         <h2 className={styles.title}>Education</h2>
@@ -20,17 +20,15 @@ export const Education = () => {
               <li className={styles.aboutItem}>
                 CSE 101 -- Data Structures and Algorithms in C/C++
               </li>
+              <li className={styles.aboutItem}>CSE 180 -- Database Systems</li>
+              <li className={styles.aboutItem}>
+                CSE 186 -- Full Stack Web Development
+              </li>
               <li className={styles.aboutItem}>
                 CSE 130 -- Computer Systems Design in C
               </li>
               <li className={styles.aboutItem}>
                 CSE 115a -- Software Engineering and Design
-              </li>
-              <li className={styles.aboutItem}>
-                CSE 114a -- Foundations of Programming Languages
-              </li>
-              <li className={styles.aboutItem}>
-                CSE 30 -- Programming Abstractions: Python
               </li>
               <li className={styles.aboutItem}> CSE 40 -- Machine Learning </li>
 
