@@ -1,33 +1,40 @@
 [
   {
-    "role": "Machine Learning Intern",
-    "organisation": "Veltris",
+    "role": "Software Engineer Intern",
+    "organisation": "Capital One",
+    "startDate": "Jun 2025",
+    "endDate": "Present",
+    "experience": [
+      "Maintaining a Java-based listener API to support real-time chat messaging features for the Dealer Navigator platform, enhancing communication between thousands of car dealers and customers",
+      "Designing and implementing a scalable DynamoDB schema to store message history with AWS infrastructure"
+    ]
+  },
+  {
+    "role": "Computer Science Tutor",
+    "organisation": "University of California",
     "startDate": "Sept 2024",
     "endDate": "Present",
     "experience": [
-      "Contributing to preliminary data cleaning and exploratory data analysis with Python and Jupyter Notebook, by using statistics concepts with Pandas and NumPy for Gen AI and LLM models",
-      "Conducting extensive analysis with different machine learning models using scikit-learn and NLTK, according to client specifications and under the guidance of a mentor"
+      "Tutored data structures and algorithms in C/C++ (CSE 101), machine learning (CSE 40), Python programming (CSE 20/30)"
     ]
   },
   {
     "role": "Undergraduate AI Researcher",
     "organisation": "UC Santa Cruz",
     "startDate": "April 2024",
-    "endDate": "Present",
+    "endDate": "June 2025",
     "experience": [
-      " Currently researching the effectiveness of ternary and septernary weights for vectors in a convolutional neural network with the resnet-18 dataset",
-      "Previously used the SNN torch and pyTorch libraries to train speech recognition and audio data"
+      "Researched the effectiveness of ternary and septernary weights for vectors in a convolutional neural networks",
+      "Used the SNN torch and pyTorch libraries to train speech recognition and audio data"
     ]
   },
   {
-    "role": "Computer Science Tutor",
-    "organisation": "Baskin Engineering",
+    "role": "Machine Learning Intern",
+    "organisation": "Veltris",
     "startDate": "Sept 2024",
-    "endDate": "Present",
+    "endDate": "Dec 2024",
     "experience": [
-      "Taught students data structures and algorithms in C and C++ for UCSC’s CSE 101 class",
-      "Teaching the foundations of machine learning with Python, Pandas, and scikit-learn for CSE 40",
-      "Teaching the Python programming language for CSE 20 and CSE 30"
+      "Contributing to preliminary data cleaning and exploratory data analysis with Python and Jupyter Notebook, by using statistics concepts with Pandas and NumPy for Gen AI and LLM models"
     ]
   }
 ]
