@@ -3,10 +3,10 @@
     "role": "Software Engineer Intern",
     "organisation": "Capital One",
     "startDate": "Jun 2025",
-    "endDate": "Present",
+    "endDate": "Aug 2025",
     "experience": [
-      "Maintaining a Java-based listener API to support real-time chat messaging features for the Dealer Navigator platform, enhancing communication between thousands of car dealers and customers",
-      "Designing and implementing a scalable DynamoDB schema to store message history with AWS infrastructure"
+      "Developed a Java-based listener to deserialize and store real-time incoming messages from the Dealer Navigator platform, enhancing communication between thousands of car dealers and customers",
+      "Established and refined a Kafka data stream that processed millions of messages and integrated it with a microservice to ensure efficient database storage with Aurora postgreSQL"
     ]
   },
   {
@@ -15,7 +15,7 @@
     "startDate": "Sept 2024",
     "endDate": "Present",
     "experience": [
-      "Tutored data structures and algorithms in C/C++ (CSE 101), machine learning (CSE 40), Python programming (CSE 20/30)"
+      "Held office hours to assist students with coding and graded assignments for CSE 40(Machine Learning), CSE 101(Data Structures/Algorithms in C/C++), CSE 20/30(Python Programming)"
     ]
   },
   {

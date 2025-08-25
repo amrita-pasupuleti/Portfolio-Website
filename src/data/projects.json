@@ -1,26 +1,44 @@
 [
   {
-    "title": "Chat App",
-    "imageSrc": "projects/chat.png",
-    "description": "An application that allows users to login and chat with other users. Has multiple functionalities, including adding friends, uploading images, and uploading files.",
-    "skills": ["React", "Firebase Auth", "Firebase Storage"],
-    "demo": "https://chat-app-ap-neon.vercel.app/",
-    "source": "https://github.com/amrita-pasupuleti/chat-app"
+    "title": "Circle",
+    "imageSrc": "projects/circle1.png",
+    "description": "A streamlined interface to collect patient information with an AI voice agent. It also makes patient records easily accessible through a smart search feature.",
+    "skills": ["Node JS", "Twilio", "OpenAI", "Tailwind CSS"],
+    "source": "https://github.com/sbhujang-ucsc/circle"
   },
   {
     "title": "Aletheia",
     "imageSrc": "projects/portfolio.png",
-    "description": "This is an app that scans documents with OpenAI APIs and explains them in simple terms based on the patient's history.",
-    "skills": ["React", "OpenAI APIs", "Supabase Auth"],
-    "demo": "https://devpost.com/software/aletheia-397t5z",
+    "description": "An app that scans medical documents and prescriptions with OpenAI APIs and explains them in simple terms based on the patient's history.",
+    "skills": ["React Native", "OpenAI", "Supabase"],
     "source": "https://github.com/amrita-pasupuleti/Aletheia-Medical-Scanner-App"
+  },
+  {
+    "title": "Speech Classification",
+    "imageSrc": "projects/speechClass.png",
+    "description": "A spiking neural network that classifies speech records of English and German digits",
+    "skills": ["PyTorch", "Tensor Flow"],
+    "source": "https://github.com/amrita-pasupuleti/Spiking-Heidelberg-Digits-and-Speech-Commands"
+  },
+  {
+    "title": "RMS Norm Transformers",
+    "imageSrc": "projects/rmsnorm.png",
+    "description": "A research project that shows LLM transformers with modified RMS Norm layers to make them more efficient",
+    "skills": ["Python", "Py Torch"],
+    "source": "https://github.com/amrita-pasupuleti/rms-norm-transformers"
   },
   {
     "title": "4-Year College Planner",
     "imageSrc": "projects/major1.png",
     "description": "This website uses a drag and drop system and web scraping to make a 4 year for college courses at UCSC.",
-    "skills": ["React", "BeautifulSoup", "Python", "MongoDB"],
-    "demo": "https://yashie.me/UCSC4yearplanner/",
+    "skills": ["React JS", "Python", "MongoDB"],
     "source": "https://github.com/PurrGod/college-planner-webapp"
+  },
+  {
+    "title": "Simple Minecraft",
+    "imageSrc": "projects/minecraft.png",
+    "description": "A simple minecraft game made with webGl",
+    "skills": ["Java Script", "WebGL"],
+    "source": "https://github.com/amrita-pasupuleti/webgl-3dworld"
   }
 ]
