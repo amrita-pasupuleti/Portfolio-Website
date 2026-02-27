@@ -1,21 +1,31 @@
 [
   {
-    "role": "Software Engineer Intern",
+    "role": "Software Engineer",
     "organisation": "Capital One",
-    "startDate": "Jun 2025",
-    "endDate": "Aug 2025",
+    "startDate": "Feb 2026",
+    "endDate": "Present",
     "experience": [
-      "Developed a Java-based listener to deserialize and store real-time incoming messages from the Dealer Navigator platform, enhancing communication between thousands of car dealers and customers",
-      "Established and refined a Kafka data stream that processed millions of messages and integrated it with a microservice to ensure efficient database storage with Aurora postgreSQL"
+      "Developed a Java-based listener to store real-time incoming messages between thousands of car dealers and customers",
+      "Established and a Kafka data stream to process millions of messages and integrated it with a microservice for efficient database storage with Aurora postgreSQL"
     ]
   },
   {
     "role": "Computer Science Tutor",
     "organisation": "University of California",
-    "startDate": "Sept 2024",
-    "endDate": "Present",
+    "startDate": "Sep 2024",
+    "endDate": "Dec 2025",
     "experience": [
-      "Held office hours to assist students with coding and graded assignments for CSE 40(Machine Learning), CSE 101(Data Structures/Algorithms in C/C++), CSE 20/30(Python Programming)"
+      "Tutored students and graded assignments for CSE 40(Machine Learning), CSE 101(Data Structures/Algorithms in C/C++), CSE 20/30(Python Programming)"
+    ]
+  },
+  {
+    "role": "Software Engineer Intern",
+    "organisation": "Capital One",
+    "startDate": "Jun 2025",
+    "endDate": "Aug 2025",
+    "experience": [
+      "Developed a Java-based listener to store real-time incoming messages between thousands of car dealers and customers",
+      "Established and a Kafka data stream to process millions of messages and integrated it with a microservice for efficient database storage with Aurora postgreSQL"
     ]
   },
   {
@@ -26,15 +36,6 @@
     "experience": [
       "Researched the effectiveness of ternary and septernary weights for vectors in a convolutional neural networks",
       "Used the SNN torch and pyTorch libraries to train speech recognition and audio data"
-    ]
-  },
-  {
-    "role": "Machine Learning Intern",
-    "organisation": "Veltris",
-    "startDate": "Sept 2024",
-    "endDate": "Dec 2024",
-    "experience": [
-      "Contributing to preliminary data cleaning and exploratory data analysis with Python and Jupyter Notebook, by using statistics concepts with Pandas and NumPy for Gen AI and LLM models"
     ]
   }
 ]

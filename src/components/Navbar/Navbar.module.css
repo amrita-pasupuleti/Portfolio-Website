@@ -1,12 +1,12 @@
-@import "../../vars.css";
+@import '../../vars.css';
 
 .navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 4vh 0 4vh 0;
+  padding: 4vh 4vh 4vh 0;
   z-index: 2;
-  margin: 0 10%;
+  margin: 0 0%;
   background-color: rgba(5, 8, 37, 0.294);
   border-radius: 15px;
 }

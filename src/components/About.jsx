@@ -9,11 +9,9 @@ export const About = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Amrita Pasupuleti</h1>
         <p className={styles.description}>
-          I'm a fourth year Computer Science student at the University of
-          California, Santa Cruz and a former software engineer intern at
-          Capital One. I also enjoyed being an AI researcher and Computer
-          Science Tutor at UCSC, in addition to helping build full stack
-          applications for various projects.
+          I'm a recent grad from the University of California, Santa Cruz and a
+          current software engineer at Capital One. I am also in the online
+          Computer Science Master's program at Georgia Tech.
         </p>
       </div>
       <div>
